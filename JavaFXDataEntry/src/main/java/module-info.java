@@ -10,6 +10,8 @@ module JavaFXDataEntry {
 	requires javafx.fxml;
 	requires javafx.media;
 	
+	opens application.controller to javafx.fxml;
+	
 }
 
 

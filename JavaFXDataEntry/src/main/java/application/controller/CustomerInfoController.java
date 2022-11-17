@@ -4,9 +4,14 @@ import application.app;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class CustomerInfoController {
 
+	
+	@FXML
+	private TextField txtFirstName;
+	
 	private app App;
 
 	public app getApp() {
@@ -18,7 +23,7 @@ public class CustomerInfoController {
 	}
 	
     @FXML
-    public void buttonClicked(Event e){
-        System.out.println("Button clicked");
+    public void buttonSubmit(Event e){
+        System.out.println(txtFirstName.getText());
     }
 }
