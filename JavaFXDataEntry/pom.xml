@@ -1,8 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>cisc.edu</groupId>
-  <artifactId>JavaFXDataEntry</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cisc.edu</groupId>
+	<artifactId>JavaFXDataEntry</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<build>
 		<plugins>
@@ -19,7 +21,7 @@
 							<transformers>
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>app.Game</mainClass>
+									<mainClass>app.java</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
@@ -83,6 +85,15 @@
 			<version>${JavaFX.Version}</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx -->
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx</artifactId>
+			<version>${JavaFX.Version}</version>
+			<type>pom</type>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-media</artifactId>
@@ -91,14 +102,12 @@
 		</dependency>
 
 
-
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-graphics</artifactId>
 			<version>${JavaFX.Version}</version>
 			<classifier>${JavaFX.Platform}</classifier>
 		</dependency>
-
 
 
 		<dependency>
@@ -115,7 +124,6 @@
 		</dependency>
 
 	</dependencies>
-
 
 
 </project>
